@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8 球台球</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hud">
+      <div><strong>8 球台球</strong><span id="turn">玩家 1 回合</span></div>
+      <div id="message">点击“开始游戏”</div>
+      <div>得分 <b id="score">0 : 0</b></div>
+    </header>
+    <section class="board-wrap">
+      <canvas id="gameCanvas" width="1100" height="620"></canvas>
+      <div id="startOverlay" class="overlay">
+        <h1>8 球台球</h1>
+        <p>真实碰撞、摩擦、库边反弹、犯规和 8 球规则。</p>
+        <button id="startBtn">开始游戏</button>
+      </div>
+    </section>
+    <footer class="controls">
+      <button id="newGameBtn">新游戏</button>
+      <button id="placeBtn" disabled>放置白球</button>
+      <span>按住白球拖动瞄准，拉得越远力度越大；移动中的球不能操作。</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
